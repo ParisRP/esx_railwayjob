@@ -9,7 +9,7 @@ local targetSpeed = 0.0
 local maxSpeed = 30.0
 
 local trainTypeMap = {
-    metro = {type = 24, max = 22.0},
+    metrotrain = {type = 24, max = 22.0},
     freight = {type = 25, max = 28.0}
 }
 
@@ -200,7 +200,7 @@ function OpenRailwayMenu(zone)
                 local vehicleType = data.current.type
                 local vehicleName = data.current.value
                 
-                if vehicleType == 'metro' or vehicleType == 'freight' then
+                if vehicleType == 'metrotrain' or vehicleType == 'freight' then
                     SpawnTrain(vehicleName)
                 else
                     AttachWagon(vehicleName)
@@ -256,7 +256,7 @@ function SpawnTrain(modelName, vtype)
     end
 
     -- Get the train type based on model
-    local trainType = (modelName == 'metrotrain' or vtype == 'metro') and trainTypeMap.metro.type or trainTypeMap.freight.type
+    local trainType = (modelName == 'metrotrain' or vtype == 'metrotrain') and trainTypeMap.metro.type or trainTypeMap.freight.type
 
     -- Create mission train
     local train = CreateMissionTrain(trainType, spawn.x, spawn.y, spawn.z, true)
@@ -274,7 +274,7 @@ function SpawnTrain(modelName, vtype)
     currentTrain = train
     currentSpeed = 0.0
     targetSpeed = 0.0
-    maxSpeed = (vtype == 'metro') and 22.0 or 28.0
+    maxSpeed = (vtype == 'metrotrain') and 22.0 or 28.0
     
     -- Put player in driver seat
     TaskWarpPedIntoVehicle(PlayerPedId(), currentTrain, -1)
@@ -357,4 +357,5 @@ AddEventHandler('onResourceStop', function(resource)
         end
         attachedWagons = {}
     end
+
 end)
