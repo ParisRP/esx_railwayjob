@@ -4,4 +4,4 @@
 beta test ESX - legacy - esx_railwayjob
 
 Just Thank you on discord
-https://discord.gg/B7ywyKnJ
+https://discord.gg/9RxKSsmN
