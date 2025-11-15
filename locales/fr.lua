@@ -1,0 +1,17 @@
+Locales['fr'] = {
+    ['press_to_open'] = 'Appuyez sur ~INPUT_CONTEXT~ pour ouvrir le menu',
+    ['citizen_wear'] = 'Tenue civile',
+    ['work_wear'] = 'Tenue de travail',
+    ['no_menu'] = 'Aucun menu disponible',
+    ['railway_menu'] = 'Menu Conducteur',
+    ['must_be_in_service'] = 'Vous devez être en service pour faire cela',
+    ['already_have_train'] = 'Vous avez déjà un train en service',
+    ['spawn_failed'] = 'Échec du spawn du train',
+    ['train_spawned'] = 'Locomotive spawnée sur les rails',
+    ['no_loc'] = 'Vous devez d\'abord avoir une locomotive',
+    ['model_failed'] = 'Impossible de charger le modèle',
+    ['spawn_failed_wagon'] = 'Échec du spawn du wagon',
+    ['wagon_attached'] = 'Wagon attaché',
+    ['must_be_job'] = 'Vous n\'avez pas le job requis',
+    ['press_to_detach'] = 'Appuyez sur ~INPUT_CONTEXT~ pour détacher les wagons',
+}
